@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff;
+    margin: 0;
+    padding: 0;
+}
+
+frame[name="top"] {
+    background: #1b3b6f;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 4px solid #2a9d8f;
+}
+
+frame[name="left"] {
+    background: #cce7ff;
+    border-right: 3px solid #2a9d8f;
+}
+
+frame[name="right"] {
+    background: white;
+}
+
+frameset {
+    border: none;
+}
+
+/* Adding a chemistry-themed look */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/graphy-dark.png');
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Styling buttons and menu items in left frame */
+frame[name="left"] a {
+    display: block;
+    padding: 10px;
+    color: #1b3b6f;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #2a9d8f;
+    background: #e6f7ff;
+    transition: background 0.3s;
+}
+
+frame[name="left"] a:hover {
+    background: #2a9d8f;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0; /* Reduced margin for less space between items */
+}
+
+/* Button style for links */
+li a {
+    display: block;
+    padding: 8px 15px; /* Reduced padding for narrower buttons */
+    text-decoration: none;
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Green to Blue gradient */
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+li a:hover {
+    background: linear-gradient(to right, #2196F3, #4CAF50); /* Reverse gradient */
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
