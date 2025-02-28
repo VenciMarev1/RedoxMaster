@@ -1,10 +1,167 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="ChemistryLabStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валентност и степен на окисление</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #e6f7ff;
+            color: #004d66;
+        }
+
+        h1, h2 {
+            color: #006080;
+            text-align: center;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: #ccf2ff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 77, 102, 0.2);
+            margin: 0 auto;
+        }
+
+        .formula {
+            background-color: #b3e6ff;
+            padding: 10px;
+            font-weight: bold;
+            font-family: monospace;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .interactive {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #0086b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #006080;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 77, 102, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            font-size: 1.2em;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p, ul {
+                font-size: 1em;
+            }
+
+            button {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert('Запомни: Валентността показва броя на връзките, а степента на окисление – електронното разпределение!');
+        }
+    </script>
 </head>
 <body>
-    <h1 style="text-align: center;">Welcome to the Chemistry Learning Platform</h1>
+    <div class="container">
+        <h2>1. Валентност</h2>
+        <p>Валентността е свойството на химичните елементи да се свързват с определен брой атоми на друг елемент, образувайки химични съединения.</p>
+        <ul>
+            <li><strong>Постоянна валентност</strong> – водород (I), кислород (II), флуор (I).</li>
+            <li><strong>Променлива валентност</strong> – желязо (II, III), сяра (II, IV, VI).</li>
+        </ul>
+        <img src="Valency-Chart-Valency-Table-of-Chemical-Elements-.png" alt="Валентност на елементите">
+        
+        <h2>2. Степен на окисление</h2>
+        <p>Степента на окисление показва условния заряд на атома в съединението, ако връзките са изцяло йонни.</p>
+        <ul>
+            <li>Положителна, ако атомът отдава електрони.</li>
+            <li>Отрицателна, ако атомът приема електрони.</li>
+            <li>Нулева, ако елементът е в свободно състояние (O₂, N₂).</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Redox_reactions.png" alt="Окислително-редукционни реакции">
+        
+        <h2>3. Основни правила</h2>
+        <ul>
+            <li>В прости вещества степента на окисление е 0.</li>
+            <li>Водородът обикновено има <span class="formula">+1</span>, освен в хидридите (<span class="formula">-1</span>).</li>
+            <li>Кислородът обикновено има <span class="formula">-2</span>, освен в пероксиди (<span class="formula">-1</span>).</li>
+            <li>Сумата на степените на окисление в неутрално съединение е <span class="formula">0</span>.</li>
+        </ul>
+        
+        <h2>4. Примери</h2>
+        <ul>
+            <li>H₂O: H (<span class="formula">+1</span>), O (<span class="formula">-2</span>), сума = 0.</li>
+            <li>H₂SO₄: H (<span class="formula">+1</span>), S (<span class="formula">+6</span>), O (<span class="formula">-2</span>), сума = 0.</li>
+            <li>KMnO₄: K (<span class="formula">+1</span>), Mn (<span class="formula">+7</span>), O (<span class="formula">-2</span>), сума = 0.</li>
+        </ul>
+        
+        <h2>Заключение</h2>
+        <p>Валентността и степента на окисление са основни понятия в химията. Валентността показва броя на връзките, които един елемент може да образува, а степента на окисление – промяната в електронното разпределение при химични реакции.</p>
+        
+        <div class="interactive">
+            <button onclick="showMessage()">Запомни това!</button>
+        </div>
+    </div>
 </body>
 </html>

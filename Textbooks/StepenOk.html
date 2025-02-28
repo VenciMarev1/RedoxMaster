@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Валентност и степен на окисление</title>
+    <link rel="stylesheet" >
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #ecf0f1;
+        margin: 20px;
+        padding: 20px;
+        color: #34495e;
+        animation: fadeIn 1s ease-out;
+    }
+
+    .container {
+        max-width: 800px;
+        background: #fff;
+        margin: 0 auto; 
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        border-top: 3px solid #3498db;
+        animation: slideInDown 0.5s ease-out;
+    }
+
+    h1, h2, h3 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+        animation: slideInLeft 0.5s ease-out;
+    }
+
+    h2 {
+        color: #3498db;
+        animation: slideInRight 0.5s ease-out;
+    }
+
+    h3 {
+        color: #e74c3c;
+        animation: zoomIn 0.5s ease-out;
+    }
+
+    p {
+        line-height: 1.7;
+        color: #34495e;
+        animation: fadeIn 1s ease-out;
+    }
+
+    ul {
+        padding-left: 25px;
+        list-style-type: square;
+        animation: fadeIn 1s ease-out;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        animation: slideInUp 0.5s ease-out;
+    }
+
+    table, th, td {
+        border: 1px solid #bdc3c7;
+    }
+
+    th {
+        background-color: #3498db;
+        color: white;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .example {
+        background-color: #e8f4f8;
+        padding: 20px;
+        border-left: 5px solid #3498db;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        animation: zoomIn 0.5s ease-out;
+    }
+
+    .example h3 {
+        margin-top: 0;
+        color: #3498db;
+    }
+
+    .exercise {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-left: 5px solid #8e44ad;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        animation: zoomIn 0.5s ease-out;
+    }
+
+    .exercise h3 {
+        margin-top: 0;
+        color: #8e44ad;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 15px auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-out;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInUp {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <header class="containerH">
+            <h1>Валентност и степен на окисление</h1>
+        </header>
+        <p>Валентност и степен на окисление (ВСО) са основни понятия в химията, които описват способността на атомите да се свързват с други атоми, образувайки химични съединения.</p>
+
+        <h2>Валентност</h2>
+        <p>Валентността е число, което показва колко химични връзки може да образува даден атом. Тя е свързана с броя на електроните, които атомът използва, за да се свърже с други атоми. Валентността винаги е цяло число и не може да бъде отрицателна.</p>
+        <ul>
+            <li><strong>Постоянна валентност:</strong> Някои елементи имат постоянна валентност, например водородът (H) винаги е одновалентен (I), кислородът (O) обикновено е двувалентен (II).</li>
+            <li><strong>Променлива валентност:</strong> Други елементи могат да проявяват различна валентност в различните съединения, например желязото (Fe) може да бъде двувалентно (II) или тривалентно (III).</li>
+        </ul>
+
+        <h2>Степен на окисление</h2>
+        <p>Степента на окисление е число, което показва условния заряд на атома в дадено съединение, като се приема, че всички връзки са йонни. Тя може да бъде положителна, отрицателна или нула.</p>
+        <ul>
+            <li><strong>Правила за определяне на степен на окисление:</strong>
+                <ul>
+                    <li>Степента на окисление на елемент в свободно състояние е 0.</li>
+                    <li>Степента на окисление на водорода (H) в повечето съединения е +1, освен в хидридите (съединения с метали), където е -1.</li>
+                    <li>Степента на окисление на кислорода (O) в повечето съединения е -2, освен в пероксидите, където е -1.</li>
+                    <li>Сумата от степените на окисление на всички атоми в една молекула е равна на 0, а в един йон е равна на заряда на йона.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Връзка между валентност и степен на окисление</h2>
+        <p>Валентността и степента на окисление са свързани, но не са едно и също нещо. Валентността показва броя на връзките, които един атом може да образува, докато степента на окисление показва условния заряд на атома в съединението.</p>
+        <p>Например, в молекулата на водата (H<sub>2</sub>O), кислородът е двувалентен (образува две връзки) и има степен на окисление -2, а всеки водороден атом е одновалентен и има степен на окисление +1.</p>
+
+        <h2>Приложение</h2>
+        <p>Определянето на валентността и степента на окисление е важно за:</p>
+        <ul>
+            <li>Наименуване на химични съединения.</li>
+            <li>Определяне на окислително-редукционните процеси.</li>
+            <li>Балансиране на химични уравнения.</li>
+        </ul>
+    </div>
+</body>
+</html>

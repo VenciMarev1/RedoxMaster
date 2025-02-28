@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Окислително-редукционни процеси</title>
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #ecf0f1;
+        margin: 20px;
+        padding: 20px;
+        color: #34495e;
+        animation: fadeIn 1s ease-out;
+    }
+
+    .container {
+        max-width: 800px;
+        background: #fff;
+        margin: 0 auto; 
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        border-top: 3px solid #3498db;
+        animation: slideInDown 0.5s ease-out;
+    }
+
+    h1, h2, h3 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+        animation: slideInLeft 0.5s ease-out;
+    }
+
+    h2 {
+        color: #3498db;
+        animation: slideInRight 0.5s ease-out;
+    }
+
+    h3 {
+        color: #e74c3c;
+        animation: zoomIn 0.5s ease-out;
+    }
+
+    p {
+        line-height: 1.7;
+        color: #34495e;
+        animation: fadeIn 1s ease-out;
+    }
+
+    ul {
+        padding-left: 25px;
+        list-style-type: square;
+        animation: fadeIn 1s ease-out;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        animation: slideInUp 0.5s ease-out;
+    }
+
+    table, th, td {
+        border: 1px solid #bdc3c7;
+    }
+
+    th {
+        background-color: #3498db;
+        color: white;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .example {
+        background-color: #e8f4f8;
+        padding: 20px;
+        border-left: 5px solid #3498db;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        animation: zoomIn 0.5s ease-out;
+    }
+
+    .example h3 {
+        margin-top: 0;
+        color: #3498db;
+    }
+
+    .exercise {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-left: 5px solid #8e44ad;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        animation: zoomIn 0.5s ease-out;
+    }
+
+    .exercise h3 {
+        margin-top: 0;
+        color: #8e44ad;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 15px auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-out;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInUp {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Окислително-редукционни процеси</h1>
+
+        <h2>1. Въведение</h2>
+        <p>Окислително-редукционните процеси (редокс процеси) са химични реакции, при които се осъществява пренос на електрони между атоми, йони или молекули. Те играят ключова роля в химията и са в основата на много природни и индустриални процеси, като горене, корозия, фотосинтеза и дишане.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Redox_wheel.svg/600px-Redox_wheel.svg.png" alt="Redox Wheel">
+
+        <h2>2. Основни понятия</h2>
+        <ul>
+            <li><strong>Окисление</strong> – процес, при който атом, йон или молекула губи електрони.</li>
+            <li><strong>Редукция</strong> – процес, при който атом, йон или молекула приема електрони.</li>
+            <li><strong>Окислител</strong> – веществото, което приема електрони и се редуцира.</li>
+            <li><strong>Редуктор</strong> – веществото, което отдава електрони и се окислява.</li>
+            <li><strong>Окислително число</strong> – формален заряд на атома.</li>
+        </ul>
+        <img src="https://www.thoughtco.com/thmb/Mg9guODLm-WhxR-mKh4WPUYF-ic=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-877184494-5c6d4c31c97c650001e2a51f.jpg" alt="Oxidation Reduction">
+
+        <h2>3. Определяне на окислителни числа</h2>
+        <p>За да определим дали дадена реакция е окислително-редукционна, трябва да анализираме окислителните числа на атомите преди и след реакцията. Някои основни правила за определяне на окислителните числа:</p>
+        <ul>
+            <li>Елементарни вещества (напр. Na, O<sub>2</sub>, Cl<sub>2</sub>) имат окислително число 0.</li>
+            <li>Водородът в съединенията обикновено има окислително число +1, освен в хидридите, където е -1.</li>
+            <li>Кислородът обикновено е с окислително число -2, освен в пероксиди, където е -1.</li>
+            <li>В прости йони окислителното число е равно на заряда на йона.</li>
+        </ul>
+        <img src="https://chem.libretexts.org/@api/deki/files/134868/CNX_Chem_17_02_OxNumberRules.jpg?revision=1&direct=true" alt="Oxidation Numbers Rules">
+        <p>Примерна таблица с окислителни числа:</p>
+        <table>
+            <tr>
+                <th>Елемент</th>
+                <th>Съединение</th>
+                <th>Окислително число</th>
+            </tr>
+            <tr>
+                <td>Натрий (Na)</td>
+                <td>Na</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Кислород (O)</td>
+                <td>O<sub>2</sub></td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Желязо (Fe)</td>
+                <td>Fe<sub>2</sub>O<sub>3</sub></td>
+                <td>+3</td>
+            </tr>
+            <tr>
+                <td>Сяра (S)</td>
+                <td>H<sub>2</sub>SO<sub>4</sub></td>
+                <td>+6</td>
+            </tr>
+        </table>
+
+        <h2>4. Примери за окислително-редукционни реакции</h2>
+        <div class="example">
+            <h3>а) Реакция на метал с киселина</h3>
+            <p><strong>Уравнение:</strong> Zn + 2HCl → ZnCl<sub>2</sub> + H<sub>2</sub></p>
+            <img src="https://www.sciencephoto.com/image/1068368/530wm/C047/7545/zinc_reacting_with_hydrochloric_acid-SPL.jpg" alt="Zinc Reaction with Hydrochloric Acid">
+            <p><strong>Анализ:</strong></p>
+            <ul>
+                <li>Цинкът (Zn) се окислява, преминавайки от окислително число 0 до +2.</li>
+                <li>Водородните йони (H<sup>+</sup>) се редуцират, преминавайки от окислително число +1 до 0, образувайки водороден газ (H<sub>2</sub>).</li>
+            </ul>
+            <p>В тази реакция цинкът действа като редуктор, отдавайки два електрона, а водородните йони действат като окислител, приемайки електроните и образувайки водороден газ.</p>
+        </div>
+    </div>
+</body>
+</html>
