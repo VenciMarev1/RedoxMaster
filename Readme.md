@@ -10,4 +10,4 @@
 
     - "Periodic Table Module": Интерактивна периодична таблица, която има за цел улеснение при работа с "Calculator Model" и "Test Module".
 
-Линк към сайта: [text](https://demo.agsteam.eu/Admin/homepage.html)
+Линк към сайта: [RedoxMaster](https://demo.agsteam.eu/Admin/homepage.html)
