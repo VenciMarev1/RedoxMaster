@@ -10,4 +10,6 @@
 
     - "Periodic Table Module": Интерактивна периодична таблица, която има за цел улеснение при работа с "Calculator Model" и "Test Module".
 
+За да използвате оптимално калкулатора трябва да напишете продукт и метал. Примерu: Cu(OH)2 + Na, MgSO4 + Ba, CaCl2 + Ba.
+
 Линк към сайта: [RedoxMaster](https://demo.agsteam.eu/Admin/homepage.html)
